@@ -1,0 +1,33 @@
+def main():
+
+m = float(input("What is the mass?" ))
+
+v = float(input("What is the velocity?" ))
+
+h = float(input("What is the height?" ))
+
+g = 9.8
+
+gpe = m*g*h
+
+tke = 0.5*m*v*v
+
+if v > 0 and h > 0:
+
+tke = 0.5*m*v*v
+
+gpe = m*g*h
+
+print("Kinetic energy is " +format(tke,'.2f'))
+
+print("Gravity is " +format(gpe,'2f'))
+
+else:
+
+print("Invalid data")
+
+if tke > 100 or gpe > 100:
+
+print("tke or gpe greater that 100")
+
+main()
