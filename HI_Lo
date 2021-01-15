@@ -1,0 +1,29 @@
+from sense_hat import SenseHat
+
+def main():
+
+try:
+
+sense=SenseHat()
+
+answer = int(input("Enter a number between 1 and 100 "))
+
+sense = SenseHat()
+
+if answer >=1 and answer <=50:
+
+sense.show_message("LO",scroll_speed=0.03,text_colour=[0,225,225])
+
+sense.clear()
+
+else: answer >=51 and answer >=100
+
+sense.show_message("HI",scroll_speed=0.03,text_colour=[0,225,225])
+
+except ValueError:
+
+sense.show_message("Answer out of bounds",scroll_speed=0.05,text_colour=[0,225,225])
+
+sense.clear()
+
+main()
