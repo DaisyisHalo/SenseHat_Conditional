@@ -1,0 +1,21 @@
+print(" m= The Muay Thai Kitchen," + " s= The Spaghetti Palace," + " t= The Taco Guru")
+
+def main():
+
+answer = input("Where do you want to have dinner? Enter m, s, or t: ")
+
+if answer == "m":
+
+print("Thai food is delicious")
+
+elif answer == "s":
+
+print("Italian food is delicious")
+
+else:
+
+answer == "t"
+
+print("Mexican food is delicious")
+
+main()
