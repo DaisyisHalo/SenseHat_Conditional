@@ -1,0 +1,21 @@
+def main():
+
+base = int(input("What is the base of your triangle?"))
+
+height = int(input("What is the height of your triangle?"))
+
+if height <0 or base <0:
+
+print("Invalid data")
+
+else:
+
+area = base*height
+
+print("The area of your triangle is " + format(area,'5.2f'))
+
+print("The area of your triangle in exponential notaion is " + format(area,'3.1e'))
+
+print("m= The Muay Thai Kitchen " + "s= The Spaghettu Palace" + "t= The Taco Guru")
+
+main()
