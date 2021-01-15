@@ -1,0 +1,27 @@
+#compute_resistor.py
+
+"""Daisy Narvaez 9/19/2018"""
+
+from sense_hat import SenseHat
+
+sense = SenseHat()
+
+def main():
+
+try:
+
+base_cost = 0.0175
+
+resistors = int(input("Enter number of resistors"))
+
+total_resistors = resistors * base_cost
+
+sense.show_message("The total is " + format(total_resistors,'.3f'),scroll_speed=0.04,text_colour=[0,225,0],back_colour=[255,0,255])
+
+sense.clear()
+
+except ValueError:
+
+print("Error in input")
+
+main()
