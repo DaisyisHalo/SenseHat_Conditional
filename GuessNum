@@ -1,0 +1,19 @@
+from sense_hat import SenseHat
+
+from random import randint
+
+from time import sleep
+
+sense = SenseHat()
+
+n = randint(1,8)
+
+guess = input("guess a number between 1-8" )
+
+if str(n) ==guess:
+
+sense.show_message("Congratulations!",scroll_speed=0.05,text_colour=[0,255,0])
+
+else:
+
+sense.show_message("Try again",scroll_speed=0.05,text_colour=[255,0,0])
